@@ -30,7 +30,7 @@
 
 * En tant qu'utilisateur je souhaite pouvoir couper le son des pubs afin de ne pas être dérangé par celle ci
 
-* En tant qu'utilisateur je souhaite pouvoir stopper la pub afin sa fin 
+* En tant qu'utilisateur je souhaite pouvoir stopper la pub afin pour ne pas avoir la pub au complet  
 
 * En tant qu'utilisateur je souhaite pouvoir noté un cour ou un exercice
 
@@ -48,6 +48,9 @@
 
 * En tant qu'utilisateur je souhaite pouvoir contacter un membre du staff afin d'informer d'un probléme ou d'une incomphréension
 
+* En tant qu'utilisateur je souhaite pouvoir débloquer une leçon avec de la monnaie de site afin d'avancer plus vite
+
+
 ## Développeur 
 
 * En tant que développeur je veux donné un raccourci vers ce qui est le plus utile celon l'utilisateur sur la page d'acceuil afin de maintenir l'attention de l'utilisateur 
@@ -64,13 +67,14 @@
 
 * En tant que développeur je souhaite envoyé un mail de confirmation à la création de compte pour empêcher la création de faux compte 
 
+* En tant qu développeur je veux limiter la fonctionnalité de l'application jusqu'à ce que l'utilisateur confirme la création de compte
+
 * En tant que développeur je souhaite envoyé un mail à un utilisateur qui ne c'est pas connecté depuis X temps 
 
 * En tant que développeur je souhaite envoyé un mail à une personne qui vient de regagner toutes ses vies 
 
 * En tant que développeur je souhaite faire un systéme de tag pour la connexion entre personne afin de faciliter la mise en relation
 
-* En tant que développeur je souhaite avoir un systéme de pertinences des commentaires pour sélectionner les plus pertinent
 
 ## Professeur 
 
@@ -91,7 +95,7 @@
 
 * En tant que prof je souhaite voté contre les leçons donnée par les autres profs afin de mettre de coté certaines leçons
 
-* En tant que prof je souhaite pouvoir mettre une note sur les diapositives de leçon afin d'apporter des précisions
+* ~~En tant que prof je souhaite pouvoir mettre une note sur les diapositives de leçon afin d'apporter des précisions~~
 
 ## Admin
 
@@ -115,10 +119,6 @@
 * En tant qu'admin je veux avoir une liste des leçons avec assez de votes afin de les consultés
 
 * En tant qu'admin je veux pouvoir validé l'intégralité de la leçon afin de la publié 
-
-* En tant qu'admin je veux avoir un systéme qui met de coté automatiquement les commentaires "non conforme"
-
-* En tant qu'admin je souhaite pouvoir consulter la liste des messages non conforme afin des les publié ou les supprimer 
 
 * En tant qu'admin je souhaite pouvoir avoir des informations supplémentaires afin de constater le profil de l'utilisateur 
 

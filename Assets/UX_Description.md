@@ -5,23 +5,51 @@ Légende:
 
 # Description Générale de l'application 
 
+Solfego est une application d'apprentissage pour le solfége, il y a des leçons et des entrainement à disposition avec un systéme de récompense.
+
+Les différents utilisateurs peuvent s'ajouter en amis.
+
+Les utilisateurs ont la possibilité de mettre commentaires sur les leçons pour recevoir de l'aide su des principes incompris.
+
+Comme toute applications avec des interactions écrite la modérations est importante dans ce cas les commentaires ne sont pas tout de suite publié mais en attente de confiration d'un admistrateur.
+
+Si un utilisateurs est considérer comme nuisible il sera alors soit timeout (il pourra consulter les leçons mais ne pourra plus commenter) ou alors banni (ne peut plus utilisé le site).
+
+Dans le cas d'un bannisement l'utilisateur pourra faire une demande de débanisement qui sera accepter ou non.
+
+Il y a la possbilité d'avoir le rôle de prof ce rôle permet de creer des leçons grâce à un outils intégrer qui seront ensuite voté par d'autres profs jusq'à être publie
+
+
+## Pour qui
+Pour tout ceux qui veulent approfondir leurs connaissance en théorie musical
+
+## Quel Problémes 
+Beaucoup de musiciens non pas eu le priviliéges d'avoir accés à des cours de solfége, le but est d'offrir une solution accessible et gratuit
+
+## Comment l'utiliser
+En se connectant sur le site sans compte on peut consulter la premiere leçon et le premier entraiement puis ils doivent se connecter pour consulter le reste de l'application
+
+
+# UX Description
 
 ## **-Client**
 
 
 #### Arrivé
 
-* Lors de mon arrivé sur le site si je ne suis pas connecté j'ai ma derniére leçon consulté en haut et en visible j'ai une proposition d'entraînement lié à cette leçon, si je n'ai jamais consulté de leçon le même encadré est présent avec la premiére leçon disponible et à la place de l'entraînement la proposition de s'inscrire.
+* Lors de mon arrivé sur le site si je suis  connecté j'ai ma derniére leçon consulté en haut et en visible j'ai une proposition d'entraînement lié à cette leçon, si je n'ai jamais consulté de leçon le même encadré est présent avec la premiére leçon disponible et à la place de l'entraînement la proposition de s'inscrire.
 
 *  J'ai à disposition 4 pages 
 
-    * Une d'entraînement et une de leçon accessible depuis le header
+    * Une d'entraînement 
+    
+    * Une de leçons
 
     * La home page décris au dessus accessible depuis le logo de l'application.
 
     * La page de profil
 
-* La premiére leçon et le premier exercice est diponible sans pouvoir se connecter, aprés la fin du premier exercices on nous propose de nous connecter avec un pop up .
+* La premiére leçon et le premier entrainement est diponible sans pouvoir se connecter, aprés la fin du premier exercices on nous propose de nous connecter avec un pop up .
 
 #### Leçons
 
@@ -32,6 +60,20 @@ Légende:
 * On les parcours à l'aide des fléches du clavier, ou des fléches sur les diapositives
 
 * On peu revenir en arriére
+
+* On peut laisser un commentaire sur une leçon 
+
+* On peut mettre un like ou un dislike sur un commentaire de leçon
+
+* Les commentaires sont accessible depuis un bouton dans la leçon
+
+* Une liste de commentaire par diapo
+
+* Les commentaires sont publié une fois l'administrateur valide le commentaire 
+
+* Les commentaire des profs sont automatiquement épingler 
+
+* Les commentaires les plus liker sont le plus haut dans la liste 
 
 #### Exercices
 
@@ -79,6 +121,9 @@ Légende:
 
 * On a un badge qui représente son niveau.
 
+* Si l'utilisateur est banni alors toutes les pages redirige vers son profil avec marqué "Bannis" un boutton pour faire une demande de débannisement
+
+* Si la demande à déjà été faite alors il est marqué "Veuillez attendre la réponse d'un administrateur"
 
 #### Systéme d'éxpériences et de niveau 
 
@@ -100,6 +145,16 @@ Légende:
 *   Je peux y répondre 
 
 *   Je peux regarder les leçons ayant assez de vote pour les publiée ou non.
+
+*  Je peux regarder les commentaire en attente de validation
+
+* Je peux acceder au différents profil de l'utilisateur avec des informations supplémentaire comme le nombre de commentaire refusé, ses activités
+
+* Je peux bannir un utilisateur en donnant une raison
+
+* Je peux accéder à une liste des réclamations de débanissement 
+
+* Je peux accepter ou refuser un débannisment 
 
 ## Professeur 
 
@@ -124,3 +179,62 @@ Légende:
 
 
 
+## Résolutions des problémes 
+
+* Framework : Symfony
+
+    * Paradigme MVC Permettant une mise en place des différents utilisateurs rapide 
+    * Moins d'habitude avec PHP donc bon entrainement 
+
+* Pub : Video.js + videojs-ima (Google IMA SDK)
+
+    * Docs : 
+    - https://videojs.com/city
+    - https://developers.google.com/interactive-media-ads?hl=fr
+    * Projet Github :
+    * https://github.com/googleads/videojs-ima
+
+      
+
+* Paiement : Stripe
+    * Doc :
+    * https://docs.stripe.com/payments/accept-a-payment?lang=php&platform=web
+
+
+
+
+
+# Resume et partie 
+
+* Gestion de compte
+    * Creation de compte 
+    * Authentification
+    * Rôle
+    * Autorisations
+
+
+* Leçons
+    * Consultations des leçons existante
+    * Gestion de débloquage de leçon
+    * Commentaires
+    * Gestion des commentaires
+
+* Outils pour création de leçon
+    * Systéme de vote pour publié une leçon
+    
+* Exercices
+    * Accéder aux exercices 
+    * Répondre au questions
+
+* Systéme de vie 
+    * Perte ou gain de vie 
+    * Possibilité d'acheter des vies
+
+* Systéme de monnaie
+    * Gain lors de différents complétions
+    * Débloquage de certaines fonctionnalité 
+    * Achat de monnaie 
+
+* Pub
+
+* Paiement 
